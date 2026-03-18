@@ -1,0 +1,86 @@
+/* ----- STYLE GLOBAL ----- */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
+
+/* ----- MENU FIXE ----- */
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #D60000;
+}
+
+/* ----- SECTIONS ----- */
+
+section {
+    padding: 100px 20px 60px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #D60000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.black-section {
+    background: #111;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.black-section h2 {
+    color: #D60000;
+}
+
+/* ----- BOUTONS ----- */
+
+.btn {
+    display: inline-block;
+    background: #D60000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #b00000;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
