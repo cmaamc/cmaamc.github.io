@@ -1,10 +1,13 @@
-/* ----- STYLE GLOBAL ----- */
+/* ----- GLOBAL ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background: #f5f5f5;
     color: #111;
+    line-height: 1.6;
 }
 
 /* ----- MENU FIXE ----- */
@@ -17,6 +20,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 nav {
@@ -29,10 +33,31 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #D60000;
+}
+
+/* ----- HERO ----- */
+
+.hero {
+    padding: 140px 20px 80px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+.hero h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.hero .intro {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 /* ----- SECTIONS ----- */
@@ -49,14 +74,18 @@ h1, h2 {
     letter-spacing: 1px;
 }
 
-.black-section {
-    background: #111;
-    color: #fff;
-    padding: 80px 20px;
+.facts ul {
+    list-style: none;
+    padding: 0;
 }
 
-.black-section h2 {
-    color: #D60000;
+.facts li {
+    background: #fff;
+    padding: 12px 18px;
+    margin: 10px 0;
+    border-left: 4px solid #D60000;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* ----- BOUTONS ----- */
@@ -69,10 +98,12 @@ h1, h2 {
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
     background: #b00000;
+    transform: translateY(-2px);
 }
 
 /* ----- FOOTER ----- */
@@ -83,4 +114,21 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+/* ----- RESPONSIVE ----- */
+
+@media (max-width: 700px) {
+    nav {
+        gap: 20px;
+        font-size: 0.9em;
+    }
+
+    .hero h1 {
+        font-size: 1.6em;
+    }
+
+    section {
+        padding: 80px 15px;
+    }
 }
